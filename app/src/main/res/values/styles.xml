@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="ActivityOneTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/white</item>
+        <item name="android:colorPrimaryDark">@color/cloud_burst</item>
+        <item name="android:textColorPrimary">@color/havelock_blue</item>
+        <item name="android:windowBackground">@color/havelock_blue</item>
+    </style>
+
+    <style name="ActivityTwoTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/havelock_blue</item>
+        <item name="android:colorPrimaryDark">@color/cloud_burst</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+</resources>

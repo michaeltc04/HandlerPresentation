@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HandlerPresentation</string>
+    <string name="reset">Reset</string>
+    <string name="load_activity_one">Load Activity 1</string>
+    <string name="load_activity_two">Load Activity 2</string>
+    <string name="activity_one_title">Activity One</string>
+    <string name="activity_two_title">Activity Two</string>
+    <string name="timer_completed">Timer Completed</string>
+</resources>
