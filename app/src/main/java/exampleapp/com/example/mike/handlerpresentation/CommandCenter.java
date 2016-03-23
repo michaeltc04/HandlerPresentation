@@ -29,14 +29,12 @@ public class CommandCenter {
         @Override
         public void run() {
             mCount++;
-            Message msg = new Message();
+            Message msg;
             if (mCount <= mContext.getResources().getInteger(R.integer.max_count_value)) {
-                msg.what = TIMER_MESSAGE;
-                msg.arg1 = mCount;
+                msg = Message.obtain(null, TIMER_MESSAGE, mCount, 0, null);
                 mTimer.postDelayed(mTimerRunnable, mContext.getResources().getInteger(R.integer.timer_delay));
             } else {
-                msg.what = TIMER_FINISHED_MESSAGE;
-                msg.arg1 = 0;
+                msg = Message.obtain(null, TIMER_FINISHED_MESSAGE, 0, 0, null);
             }
             if (mHandlerManager != null && mHandlerManager.getNumberOfHandlers() > 0) {
                 mHandlerManager.sendMessage(msg);
